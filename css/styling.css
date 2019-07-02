@@ -1,0 +1,170 @@
+html{
+    background: linear-gradient(to bottom, #737373 0%, #ffffcc 100%);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+body {
+    /*background-image: url("background.png");*/
+
+    width:99%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    overflow: auto;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* --------------------------------------- First Block --------------------------------------------------------------*/
+
+#block1{
+    width: 100%;
+    margin-top: 10%;
+}
+
+#nikos{
+    border-radius:30%;
+    width: 15%;
+    float:left;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#info {
+    margin-left: 7%;
+    float: left;
+
+}
+
+#description {
+    float: right;
+    margin-right: 5%;
+    width: 30%;
+
+}
+
+#description::first-letter {
+    font-size: 200%;
+
+}
+
+/*--------------------------------------------- Story block ---------------------------------------------------------*/
+#block2 {
+    margin-top: 50%;
+    margin-bottom: 40%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.story{
+    width: 48%;
+    margin-left: 10px;
+    float: left;
+
+}
+
+#snakelink{
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-left: 40%;
+
+}
+
+
+/* ---------------------------------------------------Snake design --------------------------------------------------*/
+
+#highscore {
+	overflow:auto;
+	float: right;
+	width: 20%;
+	height: 80%;
+	margin-right: 10%;
+
+
+}
+
+#player {
+	float: left;
+	margin-left: 5%;
+
+}
+
+#canvas {
+	margin-left: 15%;
+	border:1px solid #000000; 
+	float:left;
+}
+
+#restart {
+  background-color: #ff9933;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#restart:hover {opacity: 1}
+
+#next {
+    float: left;
+    margin-left: 10px;
+
+}
+
+/*--------------------------------------- keypad and arrow design -----------------------------------------------------*/
+#keypad{
+   clear: left;
+   display: none;
+}
+
+.mobilekeys{
+    background-color: #ff9933;
+    border: none;
+    color: black;
+    padding: 32px 48px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+
+.mobilekeys:active {
+    background-color: #ff9950;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
